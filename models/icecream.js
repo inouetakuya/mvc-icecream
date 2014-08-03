@@ -6,5 +6,10 @@ var icecreamModel = {
     {id: 'topping4', name: "チョコミント"},
     {id: 'topping5', name: "ストロベリー"},
     {id: 'topping6', name: "抹茶"}
-  ]
+  ],
+
+  // すべてのアイスクリームオブジェクトを返す
+  getAll: function() {
+    return this.list;
+  }
 };
