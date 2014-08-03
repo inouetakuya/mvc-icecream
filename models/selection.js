@@ -1,3 +1,11 @@
 var selectionModel = {
-  list: []
+  list: [],
+
+  add: function() {
+    // あとで実装する
+  },
+
+  updateViews: function() {
+    // あとで実装する
+  }
 };
