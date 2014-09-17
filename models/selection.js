@@ -7,6 +7,9 @@ var selectionModel = {
 
   add: function (icecream) {
     this.list.push(icecream);
+    if (this.list.length > 2) {
+      this.list.shift();
+    }
   },
 
   contain: function (icecream) {

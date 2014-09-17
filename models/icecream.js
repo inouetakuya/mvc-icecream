@@ -12,7 +12,7 @@ var icecreamModel = {
     return this.list;
   },
 
-  findById: function(id) {
+  findById: function (id) {
     return $.grep(this.list, function (val) {
       return id == val.id;
     })[0];
