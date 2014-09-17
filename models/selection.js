@@ -1,23 +1,15 @@
 var selectionModel = {
   list: [],
 
-  add: function() {
-    // あとで実装する
+  getIcecreams: function () {
+    return this.list;
   },
 
-  contain: function() {
-    // あとで実装する
+  add: function (icecream) {
+    this.list.push(icecream);
   },
 
-  containById: function() {
-    // あとで実装する
-  },
-
-  getIcecreams: function() {
-    // あとで実装する
-  },
-
-  updateViews: function() {
-    // あとで実装する
+  contain: function (icecream) {
+    return this.list.indexOf(icecream) >= 0;
   }
 };
