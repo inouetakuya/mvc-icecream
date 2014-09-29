@@ -14,5 +14,9 @@ var selectionModel = {
 
   contain: function (icecream) {
     return this.list.indexOf(icecream) >= 0;
+  },
+
+  containById: function(id) {
+    return this.contain(icecreamModel.findById(id));
   }
 };

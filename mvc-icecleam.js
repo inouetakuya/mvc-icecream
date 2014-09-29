@@ -23,6 +23,11 @@ $(function () {
             }).join(" > ");
 
             $("#icecream-list").text(selectionText);
+
+            // チェックボックスを更新する
+            $('#icecreams input[type="checkbox"]').each(function (i, element) {
+              element.checked = selectionModel.containById(element.name);
+            });
           })
       );
     }
